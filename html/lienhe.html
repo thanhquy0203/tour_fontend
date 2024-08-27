@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../image/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/lienhe.css">
+    <link rel="stylesheet" href="../css/hearderandfooter.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.2-web/css/all.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script type="module" src="../js/card.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <title>Cheap Travel</title>
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+        <div class="header" id="header">
+            <link rel="stylesheet" href="">
+        </div>
+        <div class="container-xxl p-3 mb-4">
+            <div class="title">
+                <h3 class="text-blue fw-bold">Thông Tin Liên Hệ</h3>
+                <div class="hr mb-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="row ">
+                        <div class="col-md-12 p-0 p-4">
+                            <p class="text-footer">
+                                <span class="icon-footer">
+                                  <i class="fa-solid fa-location-dot"></i>
+                                </span>  
+                                12 Nguyễn Văn Bảo, Phường 4, quận Gò Vấp, TPHCM
+                              </p>
+                              
+                              <p class="text-footer">
+                                <span class="icon-footer">
+                                  <i class="fa-solid fa-phone"></i>
+                                </span>  
+                                Liên hệ: 19000001 - 0902123456
+                              </p>
+                      
+                              <p class="text-footer">
+                                <span class="icon-footer">
+                                  <i class="fa-solid fa-envelope"></i>
+                                </span>  
+                                <a href="mailto:heaptravel59@gmail.com">cheaptravel59@gmail.com</a>
+                              </p>
+                      
+                              <p class="text-footer">
+                                <span class="icon-footer">
+                                  <i class="fa-brands fa-square-facebook"></i>
+                                </span>  
+                                <a href="https://www.facebook.com/profile.php?id=61558445256297&is_tour_dismissed">www.facebook.com/cheaptravel</a>
+                              </p>
+                        </div>
+                        <div class="col-md-12 p-0">
+                            <form action="" class="p-4">
+                                <div class="form-text">
+                                    <h4 class="fw-bold">Liên Hệ Với Chúng Tôi</h4>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <input type="text" class="form-control" id="hoTen" aria-describedby="hoTenHelp" placeholder="Nhập họ tên">
+                                    <span id="hotenerr" class="err"></span>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" id="diachiemail" aria-describedby="emailHelp" placeholder="Nhập email">
+                                    <span id="emailerr" class="err"></span>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea name="" id="noiDung" cols="30" rows="4" class="form-control" placeholder="Nội dung"></textarea>
+                                    <span id="noidungerr" class="err"></span>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <button id="phanHoi" type="button" class="btn btn-primary">Gửi Phản Hồi</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 p-3" id="bando">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.858169091085!2d106.68427047583877!3d10.822164158346794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1713359211216!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thông Báo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    Phản hồi đã được gửi thành công!
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Lay thong tin tu js -->
+        <div id="footer" class="">
+             
+        </div>
+    </div>
+</body>
+<script src="../js/lienhe.js"></script>
+</html>

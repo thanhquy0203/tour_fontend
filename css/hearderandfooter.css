@@ -1,0 +1,153 @@
+*{
+    font-family: 'open sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------- COMMON -----------------  */
+.text-orange {
+    color: #eb891a;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-blue {
+    color: #3C669E;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-blue {
+    background-color: #3C669E;
+}
+
+.bg-gray {
+    background-color: rgb(246, 244, 244);
+}
+
+.bg-oragne {
+    background-color: #F9AB52;
+}
+
+.hr{
+    width: 200px;
+    height: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #F9AB52;
+    display: block;
+}
+
+/* ----------------- HEADER ----------------- */
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    top: 0;
+    background-color: #fff;
+}
+
+.logo-page {
+    width: 70px;
+    height: 70px;
+}
+
+nav {
+    width: 85vw;
+    height: 70px;
+}
+
+.nav-item-header {
+    margin: 0 32px;
+}
+
+.header-form {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.btn-login a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.font-header {
+    font-size: 1.3rem;
+}
+
+.font-form {
+    font-size: x-large;
+}
+
+.btn-close {
+    width: 36px;
+    height: 36px;
+} 
+
+/* Vì chỉnh header có position fixed và z-index cao để nó không bị che
+bởi những phần tử khác thì form login bị lỗi nên phải chỉnh thêm cái này */
+.modal-backdrop {
+    /* display: none; */
+    z-index: 2 !important;
+}
+/* Xóa thanh trượt ngang body */
+body {
+    overflow-x: hidden;
+}
+
+/* ---------------------------Content------------------------ */
+
+
+
+/* ----------------- FOOTER ----------------- */
+.footer {
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
+.row-footer {
+    width: 85vw;
+}
+
+.footer .col{
+    padding: 0;
+}
+
+.title-footer {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.text-footer {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.icon-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}

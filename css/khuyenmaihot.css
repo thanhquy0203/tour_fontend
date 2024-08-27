@@ -1,0 +1,10 @@
+.breadcrumbHeight{
+    margin-top: 8vh;
+}
+.navBreadcrumb{
+    display: flex;
+    align-items: center;
+}
+.breadcrumb-item, .breadcrumb-item.active {
+    font-size: 1.1rem; /* Tăng kích thước văn bản cho thanh breadcrumb */
+}

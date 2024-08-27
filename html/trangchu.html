@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../image/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../css/xemthem.css">
+    <link rel="stylesheet" href="../css/chitiettour.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script  src="../js/cardt.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+
+
+    <title>Cheap Travel</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+
+<!-- -------------- HEADER -------------- -->
+      <div id="header">
+
+      </div>
+     
+
+<!-- -------------- SLIDER -------------- -->
+      <div class="slider">
+        <!-- ảnh giới thiệu  -->
+        <div id="demo" class="carousel slide w-100" data-bs-ride="carousel">
+           <!-- Carousel Indicators -->  
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-picture active ">
+              <img src="../image/HoiAn.jpg" alt="Los Angeles" class="carousel-picture img-fluid " >
+            </div>
+            <div class="carousel-item carousel-picture">
+              <img src="../image/grand-world-phu-quoc-3-min.jpg" alt="Chicago" class="carousel-picture img-fluid" >
+            </div>
+            <div class="carousel-item carousel-picture">
+              <img src="../image/river-4705974_1280.jpg" alt="New York" class="carousel-picture img-fluid" >
+            </div>
+          </div>
+        
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+       </div>
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+      
+
+<!-- -------------- SEAERCH -------------- -->
+<div class=" search-tool hieuung2">
+  <form action="" class="form p-4 border border-2 border-white">
+    <div class="row-search-tool m-0">
+      <div class=" search-input border roundedcol p-0 px-2 me-2 mx-2"  >
+        <div class="input-group departure">
+          <input required type="text" name="departure" id="departure" class="form-control border-0 m-0 p-0" placeholder="Điểm khởi hành" autocomplete="off">
+          <span class="input-group-text border-0 m-0 py-1" >
+            <i class="fa-solid fa-plane-departure"></i>
+          </span>
+          <div class="autobox">
+          </div>
+        </div>
+      </div>
+
+      <div class=" search-input border roundedcol p-0 px-2 me-2 mx-2"  >
+        <div class="input-group destination">
+          <input required type="text" name="destination" id="destination" class="form-control border-0 m-0 p-0" placeholder="Điểm đến" autocomplete="off">
+          <span class="input-group-text border-0 m-0 py-1" >
+            <i class="fa-solid fa-plane-arrival"></i>   
+          </span>
+          <div class="autobox">
+          </div>
+        </div>
+      </div>
+
+      <div class=" search-input border roundedcol p-0 px-2 me-2 mx-2"  >
+        <div class="input-group">
+          <input required type="datetime-local" name="time" id="time" class="form-control border-0 m-0 px-0 py-1" placeholder="Thời gian" autocomplete="off">
+          <span class="input-group-text border-0 m-0 py-1" >
+            <i class="fa-solid fa-calendar calendar-icon"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="search-input p-0 mx-2"  >
+        <button type="submit" class="btn btn-danger w-100">Tìm kiếm</button>
+      </div>
+    </div>
+  </form>
+</div> 
+      
+<!-- --------------TOUR -------------- -->   
+
+      <!-- các tour khuyến mãi -->
+      <div class="content mt-4 py-4">
+        <div class="content-item mt-3">
+          <h3 class="cap1 text-blue fw-bold ">Tour khuyến mãi</h3> 
+          <div class="hr mb-4"></div>
+          <div class="tour-content" id="table1">  <!--Phần này dùng để thêm một tour vào card-->
+          </div>
+          <a href="../html/xemthem.html"><button type="button" data-table="#table1" class="hieuung filter-button d-block mx-auto bg-blue text-white border-0 rounded py-2 px-4 mt-3 fw-bold ">Xem thêm</button></a>
+        </div>
+      </div>
+
+      <!-- các tour miền bắc -->
+      <div class="content mt-4 py-4 bg-gray">
+        <div class="content-item mt-3">
+          <h3 class="cap1 text-blue fw-bold">Tour Du Lịch</h3> 
+          <div class="hr mb-4"></div>
+          <div class="tour-content" id="table2">
+          </div>
+          <a href="../html/xemthem.html"><button type="button" data-table="#table2" class="hieuung filter-button d-block mx-auto bg-blue text-white border-0 rounded py-2 px-4 mt-3 fw-bold ">Xem thêm</button></a>
+        </div>
+      </div>
+      
+        <!-- các tour miền trung -->
+        <!-- <div class="content py-4 bg-gray">
+          <div class="content-item mt-3">
+            <h3 class="text-blue fw-bold">Tour Miền Trung</h3> 
+            <div class="hr mb-4"></div>
+            <div class="tour-content" id="tourMienTrung">
+            </div>
+            <a href="../html/xemthem.html"><button type="button" data-table="#table3" class=" filter-button d-block mx-auto bg-blue text-white border-0 rounded py-2 px-4 mt-3 fw-bold ">Xem thêm</button></a>
+          </div>
+        </div> -->
+
+        <!-- các tour miền nam -->
+        <!-- <div class="content py-4 bg-gray">
+          <div class="content-item mt-3">
+            <h3 class="text-blue fw-bold">Tour Miền Nam</h3> 
+            <div class="hr mb-4"></div>
+            <div class="tour-content" id="tourMienNam">
+            </div>
+            <a href="../html/xemthem.html"><button type="button" data-table="#table4" class=" filter-button d-block mx-auto bg-blue text-white border-0 rounded py-2 px-4 mt-3 fw-bold ">Xem thêm</button></a>
+          </div>
+        </div> -->
+
+<!-- -------------- FOOTER -------------- -->
+      <div id="footer">
+
+      </div>
+      
+    </div>
+
+    
+    <script defer src="../js/header.js"></script>
+    <script defer src="../js/footer.js"></script>
+    <script defer src="../js/trangchu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+</html> 

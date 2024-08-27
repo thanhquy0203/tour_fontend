@@ -1,0 +1,107 @@
+/* mo ta */
+.box {
+    border-left: 2px dotted #3C669E;
+    padding: 20px 0 0 18px;
+}
+
+.schedule {
+    color: white;
+    background-color: #F9AB52;
+    font-weight: bold;
+    padding: 5px 0 5px 15px  ;
+    border-radius: 20px;
+    width: 50%;
+    position: relative;
+    border-left: dotted 2px #f000;
+}
+
+.schedule:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: solid 1px #f79321;
+    top: 8px;
+    left: -34px;
+}
+
+.schedule:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #f79321;
+    top: 13px;
+    left: -29px;
+}
+
+.box p {
+    margin: 0;
+}
+
+/* Tinh so luong */
+
+.colright{
+    margin-left: 20px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 32px rgba(0,0,0,.12);
+    
+}
+
+.nl, .inputngay{
+    
+    border-radius: 10px;
+    border: #cecece 1px solid;
+    padding: 5px;
+}
+
+.tien{
+    display: flex;
+
+}
+
+.tien button{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.tien button:hover{
+    background-color: #cecece;
+}
+#tinh1, #tinhTreEm1{
+    width: 70px;
+    height: 35px;
+    text-align: center;
+}
+#tinh, #tinhTreEm{
+    width: 40px;
+    height: 35px;
+    background-color: none;
+    outline: none;
+    border: 1px solid #ececec;
+    text-align: center;
+    margin: 0 5px;
+}
+
+#txtNgay:hover, .nl:hover{
+    border: #3C669E 2px solid;
+}
+
+#txtGia,#txtGiaTreEm {
+    color: #3C669E;
+    font-weight: bold;
+}
+
+
+/* ----------------- Quy new  ----------------- */
+.box p{
+    line-height: 35px;
+    word-spacing: 2px
+}

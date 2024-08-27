@@ -1,0 +1,15 @@
+
+/* ---------------------------Content------------------------ */
+.title{
+    margin-top: 10vh;
+    margin-left: 1vw;
+}
+.err{
+    color: red;
+}
+/* Khi màn hình nhỏ lại thì chiều cao bản đồ là 400px */
+@media (max-width: 768px) {
+    #bando {
+        height: 400px;
+    }
+}
